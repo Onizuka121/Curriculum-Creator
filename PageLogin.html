@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   
+   *{
+    margin: 0;
+    padding: 0;
+   }
+
+   html,body{
+    height: 100%;
+   }
+    body {
+      background: rgb(97, 11, 217);
+      background: linear-gradient(144deg, rgba(97, 11, 217, 1) 37%, rgba(208, 242, 30, 1) 100%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login {
+      color: #D0F21EFF;
+      letter-spacing: 2px;
+      font-weight: bold;
+      font-size: xx-large;
+
+      padding: 2px;
+    }
+
+
+    .card {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      display: flex;
+      margin-top: auto;
+      justify-content: center;
+      align-items: center;
+      height: 450px;
+      min-height: 300px;
+      width: 400px;
+      flex-direction: column;
+      gap: 50px;
+      background: #610BD9;
+      border: 2px solid #D0F21EFF;
+      box-shadow: 0px 0px 50px #D0F21EFF;
+      border-radius: 15px;
+    }
+
+    .inputBox {
+      position: relative;
+      width: 270px;
+    }
+
+    .inputBox input {
+      width: 100%;
+      padding: 10px;
+      outline: none;
+      border: none;
+      color: rgb(0, 0, 0);
+      font-size: 1em;
+      background: transparent;
+      border-left: 2px solid #000;
+      border-bottom: 2px solid #000;
+      transition: 0.1s;
+      border-bottom-left-radius: 8px;
+    }
+
+    .inputBox span {
+      margin-top: 5px;
+      position: absolute;
+      left: 0;
+      transform: translateY(-10px);
+      margin-left: 10px;
+      padding: 10px;
+      font-size: 12px;
+      color: #D0F21EFF;
+      text-transform: uppercase;
+      transition: 0.5s;
+      letter-spacing: 3px;
+      border-radius: 8px;
+    }
+
+    .inputBox input:valid~span,
+    .inputBox input:focus~span {
+      transform: translateX(113px) translateY(-15px);
+      font-size: 0.8em;
+      padding: 5px 10px;
+      background: #000;
+      letter-spacing: 0.2em;
+      color: #fff;
+      border: 2px;
+    }
+
+    .inputBox input:valid,
+    .inputBox input:focus {
+      border: 2px solid #000;
+      background-color: aliceblue;
+      border-radius: 8px;
+    }
+
+    .enter {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-weight: bold;
+      height: 45px;
+      width: 100px;
+      border-radius: 5px;
+      border: 2px solid #000;
+      cursor: pointer;
+      background-color: transparent;
+      transition: 0.5s;
+      text-transform: uppercase;
+      font-size: 10px;
+      letter-spacing: 2px;
+      margin-bottom: 1em;
+      margin-top: 10px;
+    }
+
+    .enter:hover {
+      background-color: rgb(0, 0, 0);
+      color: #D0F21EFF;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="Homepage.html">
+    <div class="container">
+      <div class="card">
+        <div style="display: flex; flex-direction: column ;margin-left: -90px; margin-top: 50px;">
+          <a class="login">Welcome!</a>
+          <span style="font-size: 20px; color: #D0F21EFF;">Sing up to continue</span>
+        </div>
+        <br>
+        <div style="margin-top: -50px;">
+          <div class="inputBox">
+            <input type="text" id="email" required="required">
+            <span class="user">Email</span>
+          </div>
+
+          <br><br>
+          <div class="inputBox">
+            <input type="password" required="required">
+            <span>password</span>
+          </div>
+        </div>
+
+        <button class="enter" onclick="ProcediAllaHomePage()">Accedi</button>
+
+      </div>
+    </div>
+  </form>
+</body>
+
+
+<script>
+  function ProcediAllaHomePage() {
+    let email = document.getElementById('email').value;
+    let emailvar = email.innerHTML;
+    console.log(email);
+  }
+
+
+</script>
+
+</body>
+
+</html>
