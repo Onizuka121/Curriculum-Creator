@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    background: rgb(109, 32, 219);
+    background: linear-gradient(21deg, rgba(109, 32, 219, 1) 57%, rgba(206, 233, 75, 1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+body.animate {
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+
+html,
+body {
+    height: 100%;
+}
+
+#AlertDiv {
+
+    gap: 20px;
+    height: 150px;
+    visibility: hidden;
+    position: fixed;
+    bottom: -100px;
+    left: 50%;
+    border-radius: 15px;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    opacity: 1;
+    z-index: 1000;
+}
+
+#AlertDiv.show {
+    bottom: 50%;
+}
+
+#Conferma,
+#Annulla {
+    font-weight: bold;
+    padding: 10px;
+    background-color: red;
+    color: #D0F21EFF;
+    border-radius: 15px;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+
+}
+
+#Conferma:hover,
+#Annulla:hover {
+    padding: 15px;
+}
+
+.nav {
+    width: 100%;
+    height: 70px;
+}
+
+.rolling {
+    width: auto;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    gap: 40px;
+
+}
+
+p {
+    font-weight: bold;
+    font-size: small;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navContainer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+.imageLogo {
+    background-image: url(applicant.png);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-top: 0;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(110, 41, 238, 0.5);
+    opacity: 0;
+    z-index: 999;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+.logoTitolo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+    text-shadow: 4px 2px 2px rgba(208, 255, 0, 0.5);
+    color: #D0F21EFF;
+    font-style: initial;
+    margin-top: -5px;
+
+
+}
+
+.logoETitolo {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.logoETitolo:hover {
+    cursor: pointer;
+}
+
+.contenitorePrincipale {
+    height: 100%;
+    display: inline-block;
+}
+
+.DC {
+    cursor: pointer;
+}
+
+.DatiContatti {
+    color: rgb(204, 255, 0);
+}
+
+.DatiContainer {
+
+    padding: 20px;
+    text-align: left;
+    justify-content: left;
+    height: auto;
+    margin: 0 auto;
+    width: 60%;
+}
+
+
+.FormDATI {
+
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.labelDATI {
+    font-weight: bold;
+    font-size: small;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.textfield {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #e8e8e8;
+    box-shadow: 6px 6px 12px #ffffff,
+        -6px -6px 12px #D0F21EFF;
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: none;
+    font-weight: bold;
+}
+
+.textfield:focus,
+.textfield:hover {
+    outline-color: white;
+    box-shadow: 6px 6px 12px #D0F21EFF,
+        -3px -3px 12px #D0F21EFF;
+}
+
+.FormInput {
+    display: flex;
+    margin: auto;
+    justify-content: left;
+    width: auto;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.Continua {
+    display: block;
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: #d0ff00;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.Continua span {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.Continua span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+.Continua:hover span {
+    padding-right: 15px;
+}
+
+.Continua:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.BACK {
+    display: inline-block;
+    position: relative;
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: #d0ff00;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.BACK span {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.BACK span::before {
+    content: '«';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 100px;
+    transition: 0.5s;
+}
+
+.BACK:hover span {
+    padding-left: 15px;
+}
+
+.BACK:hover span::before {
+    opacity: 1;
+    right: 95px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 400px;
+}
+
+#skillsList {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: x-large;
+    display: block;
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 6px 6px 12px #ffffff,
+        -6px -6px 12px #D0F21EFF;
+    transition: box-shadow 0.3s ease-in-out;
+    border: none;
+    box-shadow: none;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-right: 10px;
+    list-style-type: disc;
+    margin-left: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #e8e8e8;
+}
+
+#skillsList:hover {
+    outline-color: white;
+    box-shadow: 6px 6px 12px #D0F21EFF,
+        -3px -3px 12px #D0F21EFF;
+}
+
+#skillsList li {
+    margin: 10px 0px;
+    margin-left: 10px;
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+.SelectCompetenze,.SelectCompetenze menu {
+    text-align: center;
+    width: 340px;
+    height: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #e8e8e8;
+    box-shadow: 6px 6px 12px #ffffff,
+        -6px -6px 12px #D0F21EFF;
+    transition: box-shadow 0.3s ease-in-out;
+    border: 2px solid #D0F21EFF;
+    box-shadow: none;
+    margin-left: 100px;
+    font-weight: bold;
+    visibility: visible;
+}
+.SelectCompetenze::after{
+    visibility: visible;
+}
+.SelectCompetenze:hover::after,
+.SelectCompetenze:focus::after{
+    visibility: hidden;
+    border: none;
+}
+.SelectCompetenze:focus {
+    outline-color: white;
+    box-shadow: 6px 6px 12px #D0F21EFF,
+        -3px -3px 12px #D0F21EFF;
+}
+
+.SelectCompetenze option {
+    width: auto;
+}
+
+#btn {
+    width: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(21deg, rgba(97, 11, 217, 1) 0%, rgba(208, 242, 30, 1) 100%);
+    box-shadow: 0 0.7em 1.5em -0.5em rgb(32, 5, 71);
+    box-shadow: none;
+    border: none;
+    transition: box-shadow 0.5s ease-in-out;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+}
+
+#btn svg {
+    margin-right: 6px;
+}
+
+#btn:active {
+    box-shadow: 0 0.3em 1em -0.5em #17064498;
+}
+
+#btn:hover {
+    box-shadow: 0 0.7em 1.5em -0.5em rgb(32, 5, 71);
+}

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="HomepageStyle.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+
+
+    <div id="AlertDiv">
+        <p style="font-size: x-large;">Confermi?</p>
+        <p>Vuoi davvero tornare alla pagina di Login?</p>
+        <br>
+        <br>
+        <button id="Conferma" onclick="Conferma()" style="background-color: green ;">CONFERMA</button>
+        <button id="Annulla" onclick="Annulla()">ANNULLA</button>
+    </div>
+    <header>
+        <div class="containerNav">
+            <nav class="navContainer">
+                <div class="logoETitolo">
+                    <div class="imageLogo"></div>
+                    <a onclick="ShowAlert()" class="logoTitolo">MyCV</a>
+                </div>
+                <br><br><br><br>
+                <div class="rolling">
+                    <div class="DC" onclick="ShowDiv('Div1')"
+                        style="display: flex; flex-direction: row; width: auto; height: 30px; gap: 10px;">
+                        <div class="position"
+                            style="border-radius: 5px;text-align: center ; font-weight: bold;width: 30px; height: 30px; background-color: #D0F21EFF; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            1</div>
+                        <p class="DatiContatti" style="margin-top: 4px;"> DATI E CONTATTI </p>
+                    </div>
+                    <div class="DC" onclick="ShowDiv('Div2')"
+                        style="display: flex; flex-direction: row; width: auto; height: 30px; gap: 10px;">
+                        <div class="position"
+                            style="border-radius: 5px;text-align: center ;font-weight: bold;width: 30px; height: 30px; background-color: rgb(176, 176, 176); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            2</div>
+                        <p class="DatiContatti" style="color: rgb(176, 176, 176);margin-top: 4px;"> COMPETENZE </p>
+                    </div>
+                    <div class="DC" onclick="ShowDiv('Div3')" style="display: flex; flex-direction: row; width: auto; height: 30px; gap: 10px;">
+                        <div class="position"
+                            style="border-radius: 5px;text-align: center ;font-weight: bold;width: 30px; height: 30px; background-color: rgb(176, 176, 176); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            3</div>
+                        <p class="DatiContatti" style="color: rgb(176, 176, 176);margin-top: 4px;"> PROFILO </p>
+                    </div>
+                    <div class="DC" onclick="ShowDiv('Div4')" style="display: flex; flex-direction: row; width: auto; height: 30px; gap: 10px;">
+                        <div class="position"
+                            style="border-radius: 5px;text-align: center ;font-weight: bold;width: 30px; height: 30px; background-color: rgb(175, 175, 175); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            4</div>
+                        <p class="DatiContatti" style="color: rgb(176, 176, 176);margin-top: 4px;"> ISTRUZIONE E
+                            FORMAZIONE </p>
+                    </div>
+                    <div class="DC" onclick="ShowDiv('Div5')" style="display: flex; flex-direction: row; width: auto; height: 30px; gap: 10px;">
+                        <div class="position"
+                            style="border-radius: 5px;text-align: center ;font-weight: bold;width: 30px; height: 30px; background-color: rgb(175, 175, 175); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            5</div>
+                        <p class="DatiContatti" style="color: rgb(176, 176, 176);margin-top: 4px;"> CERTIFICAZIONI </p>
+                    </div>
+                    <div class="DC" onclick="ShowDiv('Div6')" style="display: flex; flex-direction: row; width: auto; height: 30px; gap: 10px;">
+                        <div class="position"
+                            style="border-radius: 5px;text-align: center ;font-weight: bold;width: 30px; height: 30px; background-color: rgb(176, 176, 176); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            6</div>
+                        <p class="DatiContatti" style="color: rgb(176, 176, 176);margin-top: 4px;"> COMPETENZE
+                            LINGUISTICHE </p>
+                    </div>
+
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="DatiContainer" id="Div1">
+        <p
+            style="font-size: 37px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-top: 0;color: #D0F21EFF;">
+            Inizia inserendo i tuoi dati personali e contatti</p>
+        <h1
+            style="font-size: 20px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-top: auto; display: flex; flex-wrap: wrap;">
+            Inserisci il tuo nome e il tuo cognome e gli altri dati personali , ricordati di mettere almeno un contatto
+            che sia email o telefono</h1>
+        <br><br>
+        <div class="FormInput">
+            <div class="FormDATI">
+                <label for="Nome" class="labelDATI">NOME</label>
+                <input type="text" id="Nome" name="Nome" placeholder="Marco" class="textfield" required>
+            </div>
+
+            <div class="FormDATI">
+                <label for="Cognome" class="labelDATI">COGNOME</label>
+                <input type="text" id="Cognome" class="textfield" placeholder="Rossi" required>
+            </div>
+
+            <div class="FormDATI">
+                <label for="dataDiNascita" class="labelDATI">DATA DI NASCITA</label>
+                <input type="date" id="dataDiNascita" name="datadinascita" class="textfield" placeholder="" required>
+            </div>
+
+            <div class="FormDATI">
+                <label for="indirizzo" class="labelDATI">INDIRIZZO</label>
+                <input type="text" id="indirizzo" class="textfield" placeholder="via Marco Polo 2">
+            </div>
+
+            <div class="FormDATI">
+                <label for="citta" class="labelDATI">CITTA'</label>
+                <input type="text" id="citta" class="textfield" placeholder="Milano" required>
+            </div>
+            <div class="FormDATI">
+                <label for="cap" class="labelDATI">CAP</label>
+                <input type="number" id="cap" class="textfield" placeholder="20019">
+            </div>
+            <div class="FormDATI">
+                <label for="email" class="labelDATI">E-MAIL</label>
+                <input type="email" id="email" class="textfield" style="width: 300px;"
+                    placeholder="marcorossi@gmail.com" required>
+            </div>
+
+            <div class="FormDATI">
+                <label for="telef" class="labelDATI">TELEFONO</label>
+                <input type="tel" pattern="^\+39\d{2}\s\d{3}\s\d{4}$" id="telef" maxlength="10" name="telefono"
+                    class="textfield" placeholder="+39 " required>
+            </div>
+
+
+
+
+
+        </div>
+        <br><br>
+        <br>
+
+        <div class="buttons">
+            <button class="BACK" id="Back" onclick="ShowAlert()"> <span>INDIETRO</span> </button>
+            <button class="Continua" id="Continua" onclick="ShowDiv('Div2')"> <span>CONTINUA</span> </button>
+        </div>
+
+
+    </div>
+
+
+    <div class="DatiContainer" id="Div2" style="display: none; transition: opacity 0.5s ease-in-out;
+    opacity: 1;">
+        <p
+            style="font-size: 37px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-top: 0;color: #D0F21EFF;">
+            Quali sono le tue principali capacità e competenze?</p>
+        <br>
+        <h1
+            style="font-size: 20px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-top: auto; display: flex; flex-wrap: wrap;">
+            Inserisci le tue competenze , aiutati con i suggertimenti se ti serve!</h1>
+        <br><br>
+        <div class="FormInput" style="gap: 50px;">
+
+            <ul id="skillsList" contenteditable>
+                <li></li>
+            </ul>
+            <br>
+            <br>
+            <select class="SelectCompetenze" id="SelectID">
+                <option value="">- Seleziona -</option>
+                <option value="1">Problem solving</option>
+                <option value="2">Teamwork</option>
+                <option value="3">Comunicazione</option>
+                <option value="4">Leadership</option>
+                <option value="5">Pensiero critico</option>
+                <option value="6">Gestione del tempo</option>
+                <option value="7">Creatività</option>
+                <option value="8">Adattabilità</option>
+                <option value="9">Pianificazione strategica</option>
+                <option value="10">Negoziazione</option>
+                <option value="11">Gestione del conflitto</option>
+                <option value="12">Innovazione</option>
+                <option value="13">Attitudine al problem solving</option>
+                <option value="14">Orientamento al cliente</option>
+                <option value="15">Flessibilità</option>
+                <option value="16">Gestione del progetto</option>
+                <option value="17">Gestione delle risorse umane</option>
+                <option value="18">Visione d'insieme</option>
+                <option value="19">Motivazione</option>
+                <option value="20">Empatia</option>
+                <option value="21">Autonomia</option>
+                <option value="22">Conoscenza dei sistemi informatici</option>
+                <option value="23">Problem solving avanzato</option>
+                <option value="24">Gestione del cambiamento</option>
+                <option value="25">Capacità di apprendimento rapido</option>
+                <option value="26">Gestione delle relazioni interpersonali</option>
+                <option value="27">Gestione del budget</option>
+                <option value="28">Capacità di pianificazione</option>
+                <option value="29">Capacità di analisi dei dati</option>
+                <option value="30">Gestione delle emergenze</option>
+                <option value="31">Gestione del rischio</option>
+                <option value="32">Gestione del personale</option>
+                <option value="33">Gestione delle vendite</option>
+                <option value="34">Gestione della qualità</option>
+                <option value="35">Gestione della produttività</option>
+                <option value="36">Gestione dei costi</option>
+                <option value="37">Gestione della logistica</option>
+                <option value="38">Gestione delle attività di marketing</option>
+                <option value="39">Gestione delle attività di pubbliche relazioni</option>
+            </select>
+
+            <button id="btn" onclick="AGGIUNGI()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path fill="currentColor" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path>
+                </svg>
+                <span
+                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: bold;">Add</span>
+            </button>
+
+        </div>
+
+        <br><br><br>
+
+        <div class="buttons">
+            <button class="BACK" id="Back" onclick="ShowDiv('Div1')"> <span>INDIETRO</span> </button>
+            <button class="Continua" id="Continua" onclick="ShowDiv('Div3')"> <span>CONTINUA</span> </button>
+        </div>
+
+
+    </div>
+    <br><br>
+    <br>
+
+
+    </div>
+
+    <div id="overlay"></div>
+
+</body>
+<script>
+
+    let select = document.getElementById("SelectID");
+    let btn = document.getElementById("btn");
+    let ul = document.getElementById("skillsList");
+
+
+
+
+
+    function AGGIUNGI() {
+
+        let selectOption = select.options[select.selectedIndex];
+        var li = document.createElement("li");
+        var text = document.createTextNode(selectOption.text);
+        li.appendChild(text);
+        ul.appendChild(li);
+
+    }
+
+
+
+    let mydiv = document.getElementsByClassName("DC");
+    let mydiv2 = document.getElementsByClassName("DatiContainer");
+
+
+
+    function Colorazione(ind) {
+
+        for (let i = 0; i < mydiv.length; i++) {
+
+           
+
+                mydiv[i].style.color = "rgb(68, 68, 68)";
+                mydiv[i].querySelector(".position").style.backgroundColor = "#D0F21EFF";
+                mydiv[i].querySelector(".DatiContatti").style.color = "#D0F21EFF";
+
+
+
+                let otherDiv = Array.from(mydiv).filter(function (div) {
+                    return div !== mydiv[ind];
+                }, mydiv[ind]);
+
+                for (let i = 0; i < otherDiv.length; i++) {
+
+                    otherDiv[i].style.color = "rgb(68, 68, 68)";
+                    let innerDiv = otherDiv[i].querySelector(".position");
+                    let text = otherDiv[i].querySelector(".DatiContatti");
+                    text.style.color = "rgb(175, 175, 175)";
+                    innerDiv.style.backgroundColor = "rgb(175, 175, 175)";
+                }
+        }
+    }
+
+
+
+
+    let div1 = document.getElementById("Div1");
+    let div2 = document.getElementById("Div2");
+    let body = document.body;
+
+
+    function HideDiv() {
+
+        div1.style.display = 'block';
+        div2.style.display = 'none';
+        animateDEGradient(41);
+
+    }
+
+    function ShowDiv(div) {
+
+
+
+        let altriDiv = Array.from(mydiv2);
+        let thisdiv = document.getElementById(div);
+
+        let index = altriDiv.indexOf(thisdiv);
+        console.log("Index___>",index);
+
+
+       altriDiv.filter(function (div) {
+                    return div !== thisdiv;
+                }, thisdiv);
+
+        console.log(altriDiv);
+
+        for (let i = 0; i < altriDiv.length; i++) {
+
+            altriDiv[i].style.display = 'none';
+
+        }
+
+        thisdiv.style.display = 'block';
+       
+        let element = event.target;
+
+        Colorazione(index);
+        
+       
+        animateGradient(21);
+
+    }
+
+
+    function animateGradient(degree) {
+        var angle = degree;
+        var interval = setInterval(function () {
+            angle++;
+            body.style.background = `linear-gradient(${angle}deg, rgba(109,32,219,1) 57%, rgba(206,233,75,1) 100%)`;
+
+            if (angle == (degree + 20)) {
+                clearInterval(interval);
+            }
+        }, 30);
+    }
+
+    function animateDEGradient(degree) {
+        var angle = degree;
+        var interval = setInterval(function () {
+            angle--;
+            body.style.background = `linear-gradient(${angle}deg, rgba(109,32,219,1) 57%, rgba(206,233,75,1) 100%)`;
+
+            if (angle == (degree - 20)) {
+                clearInterval(interval);
+            }
+        }, 30);
+    }
+    function ShowAlert() {
+        let alertDiv = document.getElementById("AlertDiv");
+        let overlayDiv = document.getElementById("overlay");
+        alertDiv.style.visibility = 'visible';
+        alertDiv.classList.toggle("show");
+        overlayDiv.style.display = 'block';
+        overlayDiv.style.opacity = 1;
+
+    }
+
+    function Conferma() {
+        window.location.href = 'PageLogin.html';
+    }
+
+    function Annulla() {
+        let alertDiv = document.getElementById("AlertDiv");
+        alertDiv.style.visibility = 'hidden';
+        alertDiv.classList.toggle("show");
+        let overlayDiv = document.getElementById("overlay");
+        overlayDiv.style.opacity = 0;
+    }
+
+
+
+</script>
+
+</html>
