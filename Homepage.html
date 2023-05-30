@@ -7,10 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="HomepageStyle.css">
-    <title>Home Page</title>
+    <link rel="shortcut icon" href="applicant.png" type="image/x-icon">
+    <title> HOME - MYCV</title>
 </head>
 
 <body>
+
 
 
     <div id="AlertDiv">
@@ -31,11 +33,11 @@
                 <br><br><br><br>
                 <div class="rolling">
                     <div class="DC" onclick="ShowDiv('Div1')"
-                        style="display: flex; flex-direction: row; width: auto; height: 30px; gap: 10px;">
+                        style="display: flex; flex-direction: row; width: auto; height: 30px; gap: 10px; opacity: 1;">
                         <div class="position"
-                            style="border-radius: 5px;text-align: center ; font-weight: bold;width: 30px; height: 30px; background-color: #D0F21EFF; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                            style="border-radius: 5px;text-align: center ;opacity: 1; color: black; font-weight: bold;width: 30px; height: 30px; background-color: #D0F21EFF; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
                             1</div>
-                        <p class="DatiContatti" style="margin-top: 4px;"> DATI E CONTATTI </p>
+                        <p class="DatiContatti" style="margin-top: 4px;opacity: 1;"> DATI E CONTATTI </p>
                     </div>
                     <div class="DC" onclick="ShowDiv('Div2')"
                         style="display: flex; flex-direction: row; width: auto; height: 30px; gap: 10px;">
@@ -44,26 +46,30 @@
                             2</div>
                         <p class="DatiContatti" style="color: rgb(176, 176, 176);margin-top: 4px;"> COMPETENZE </p>
                     </div>
-                    <div class="DC" onclick="ShowDiv('Div3')" style="display: flex; flex-direction: row; width: auto; height: 30px; gap: 10px;">
+                    <div class="DC" onclick="ShowDiv('Div3')"
+                        style="display: flex; flex-direction: row; width: auto; height: 30px; gap: 10px;">
                         <div class="position"
                             style="border-radius: 5px;text-align: center ;font-weight: bold;width: 30px; height: 30px; background-color: rgb(176, 176, 176); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
                             3</div>
                         <p class="DatiContatti" style="color: rgb(176, 176, 176);margin-top: 4px;"> PROFILO </p>
                     </div>
-                    <div class="DC" onclick="ShowDiv('Div4')" style="display: flex; flex-direction: row; width: auto; height: 30px; gap: 10px;">
+                    <div class="DC" onclick="ShowDiv('Div4')"
+                        style="display: flex; flex-direction: row; width: auto; height: 30px; gap: 10px;">
                         <div class="position"
                             style="border-radius: 5px;text-align: center ;font-weight: bold;width: 30px; height: 30px; background-color: rgb(175, 175, 175); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
                             4</div>
                         <p class="DatiContatti" style="color: rgb(176, 176, 176);margin-top: 4px;"> ISTRUZIONE E
                             FORMAZIONE </p>
                     </div>
-                    <div class="DC" onclick="ShowDiv('Div5')" style="display: flex; flex-direction: row; width: auto; height: 30px; gap: 10px;">
+                    <div class="DC" onclick="ShowDiv('Div5')"
+                        style="display: flex; flex-direction: row; width: auto; height: 30px; gap: 10px;">
                         <div class="position"
                             style="border-radius: 5px;text-align: center ;font-weight: bold;width: 30px; height: 30px; background-color: rgb(175, 175, 175); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
                             5</div>
                         <p class="DatiContatti" style="color: rgb(176, 176, 176);margin-top: 4px;"> CERTIFICAZIONI </p>
                     </div>
-                    <div class="DC" onclick="ShowDiv('Div6')" style="display: flex; flex-direction: row; width: auto; height: 30px; gap: 10px;">
+                    <div class="DC" onclick="ShowDiv('Div6')"
+                        style="display: flex; flex-direction: row; width: auto; height: 30px; gap: 10px;">
                         <div class="position"
                             style="border-radius: 5px;text-align: center ;font-weight: bold;width: 30px; height: 30px; background-color: rgb(176, 176, 176); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
                             6</div>
@@ -80,7 +86,9 @@
     <div class="DatiContainer" id="Div1">
         <p
             style="font-size: 37px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-top: 0;color: #D0F21EFF;">
-            Inizia inserendo i tuoi dati personali e contatti</p>
+            Inizia inserendo i tuoi <span
+                style="font-size: 37px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-top: 0;color: rgb(30, 44, 242);">dati
+                personali e contatti</span></p>
         <h1
             style="font-size: 20px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-top: auto; display: flex; flex-wrap: wrap;">
             Inserisci il tuo nome e il tuo cognome e gli altri dati personali , ricordati di mettere almeno un contatto
@@ -136,7 +144,7 @@
         <br>
 
         <div class="buttons">
-            <button class="BACK" id="Back" onclick="ShowAlert()"> <span>INDIETRO</span> </button>
+            <button class="BACK" id="Back" onclick="ShowAlert()"> <span>LOGIN</span> </button>
             <button class="Continua" id="Continua" onclick="ShowDiv('Div2')"> <span>CONTINUA</span> </button>
         </div>
 
@@ -156,55 +164,379 @@
         <br><br>
         <div class="FormInput" style="gap: 50px;">
 
-            <ul id="skillsList" contenteditable>
-                <li></li>
-            </ul>
-            <br>
-            <br>
-            <select class="SelectCompetenze" id="SelectID">
-                <option value="">- Seleziona -</option>
-                <option value="1">Problem solving</option>
-                <option value="2">Teamwork</option>
-                <option value="3">Comunicazione</option>
-                <option value="4">Leadership</option>
-                <option value="5">Pensiero critico</option>
-                <option value="6">Gestione del tempo</option>
-                <option value="7">Creatività</option>
-                <option value="8">Adattabilità</option>
-                <option value="9">Pianificazione strategica</option>
-                <option value="10">Negoziazione</option>
-                <option value="11">Gestione del conflitto</option>
-                <option value="12">Innovazione</option>
-                <option value="13">Attitudine al problem solving</option>
-                <option value="14">Orientamento al cliente</option>
-                <option value="15">Flessibilità</option>
-                <option value="16">Gestione del progetto</option>
-                <option value="17">Gestione delle risorse umane</option>
-                <option value="18">Visione d'insieme</option>
-                <option value="19">Motivazione</option>
-                <option value="20">Empatia</option>
-                <option value="21">Autonomia</option>
-                <option value="22">Conoscenza dei sistemi informatici</option>
-                <option value="23">Problem solving avanzato</option>
-                <option value="24">Gestione del cambiamento</option>
-                <option value="25">Capacità di apprendimento rapido</option>
-                <option value="26">Gestione delle relazioni interpersonali</option>
-                <option value="27">Gestione del budget</option>
-                <option value="28">Capacità di pianificazione</option>
-                <option value="29">Capacità di analisi dei dati</option>
-                <option value="30">Gestione delle emergenze</option>
-                <option value="31">Gestione del rischio</option>
-                <option value="32">Gestione del personale</option>
-                <option value="33">Gestione delle vendite</option>
-                <option value="34">Gestione della qualità</option>
-                <option value="35">Gestione della produttività</option>
-                <option value="36">Gestione dei costi</option>
-                <option value="37">Gestione della logistica</option>
-                <option value="38">Gestione delle attività di marketing</option>
-                <option value="39">Gestione delle attività di pubbliche relazioni</option>
-            </select>
+            <div id="skillslistContainer">
+                <ul id="skillsList" contenteditable>
+                    <li style="color: gray;">Inserisci qui le competenze</li>
+                </ul>
 
-            <button id="btn" onclick="AGGIUNGI()">
+            </div>
+            <br>
+            <br>
+            <input list="Competenze-List" id="Competenze" class="SelectCompetenze"
+                placeholder="Seleziona una competenza">
+            <datalist id="Competenze-List">
+                <option value="">- Seleziona -</option>
+                <option value="Problem solving">Problem solving</option>
+                <option value="Teamwork">Teamwork</option>
+                <option value="Comunicazione">Comunicazione</option>
+                <option value="Leadership">Leadership</option>
+                <option value="Pensiero critico">Pensiero critico</option>
+                <option value="Gestione del tempo">Gestione del tempo</option>
+                <option value="Creatività">Creatività</option>
+                <option value="Adattabilità">Adattabilità</option>
+                <option value="Pianificazione strategica">Pianificazione strategica</option>
+                <option value="Negoziazione">Negoziazione</option>
+                <option value="Gestione del conflitto">Gestione del conflitto</option>
+                <option value="Innovazione">Innovazione</option>
+                <option value="Attitudine al problem solving">Attitudine al problem solving</option>
+                <option value="Orientamento al cliente">Orientamento al cliente</option>
+                <option value="Flessibilità">Flessibilità</option>
+                <option value="Gestione del progetto">Gestione del progetto</option>
+                <option value="Gestione delle risorse umane">Gestione delle risorse umane</option>
+                <option value="Visione d'insieme">Visione d'insieme</option>
+                <option value="Motivazione">Motivazione</option>
+                <option value="Empatia">Empatia</option>
+                <option value="Autonomia">Autonomia</option>
+                <option value="Conoscenza dei sistemi informatici">Conoscenza dei sistemi informatici</option>
+                <option value="Problem solving avanzato">Problem solving avanzato</option>
+                <option value="Gestione del cambiamento">Gestione del cambiamento</option>
+                <option value="Capacità di apprendimento rapido">Capacità di apprendimento rapido</option>
+                <option value="Gestione delle relazioni interpersonali">Gestione delle relazioni interpersonali
+                </option>
+                <option value="Gestione del budget">Gestione del budget</option>
+                <option value="Capacità di pianificazione">Capacità di pianificazione</option>
+                <option value="Capacità di analisi dei dati">Capacità di analisi dei dati</option>
+                <option value="Gestione delle emergenze">Gestione delle emergenze</option>
+                <option value="Gestione del rischio">Gestione del rischio</option>
+                <option value="Gestione del personale">Gestione del personale</option>
+                <option value="Gestione delle vendite">Gestione delle vendite</option>
+                <option value="Gestione della qualità">Gestione della qualità</option>
+                <option value="Gestione della produttività">Gestione della produttività</option>
+                <option value="Gestione dei costi">Gestione dei costi</option>
+                <option value="Gestione della logistica">Gestione della logistica</option>
+                <option value="Gestione delle attività di marketing">Gestione delle attività di marketing</option>
+                <option value="Gestione delle attività di pubbliche relazioni">Gestione delle attività di pubbliche
+                    relazioni</option>
+            </datalist>
+
+            <button id="btn" onclick="AGGIUNGI('skillsList,Competenze')">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                    <path fill="currentColor" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path>
+                </svg>
+                <span
+                    style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-weight: bold;">Add</span>
+            </button>
+
+
+        </div>
+
+        <br><br><br>
+
+        <div class="buttons">
+            <button class="BACK" id="Back" onclick="ShowDiv('Div1')"> <span>INDIETRO</span> </button>
+            <button class="Continua" id="Continua" onclick="ShowDiv('Div3')"> <span>CONTINUA</span> </button>
+        </div>
+    </div>
+    </div>
+
+    <div class="DatiContainer" id="Div3" style="display: none; transition: opacity 0.5s ease-in-out;
+    opacity: 1;">
+
+        <div style="display: flex; flex-direction: row; gap:10px;">
+            <p class="Paragraph-main">
+                Descrivi qui il tuo
+            </p>
+
+            <p class="Paragraph-main" style="color:rgb(28, 21, 233);">profilo professionale</p>
+
+        </div>
+        <br><br>
+        <div id="scrollDiv" style="overflow: auto; height: 95%; padding-right: 70px; width: 100%;">
+            <div class="Editor-wrapper">
+
+                <div class="Container-TextArea">
+                    <textarea id="TextAreaID" cols="30" rows="10"></textarea>
+                    <br><br>
+                    <div class="Suggerimenti">
+                        <input list="suggerimenti" id="Suggerimeni-input" placeholder="Cerca per qualifica o settore">
+
+                        <datalist id="suggerimenti">
+                            <option value="Amministrazione">Amministrazione</option>
+                            <option value="Architettura">Architettura</option>
+                            <option value="Arte e Design">Arte e Design</option>
+                            <option value="Assistenza clienti">Assistenza clienti</option>
+                            <option value="Comunicazione">Comunicazione</option>
+                            <option value="Consulenza">Consulenza</option>
+                            <option value="Contabilità">Contabilità</option>
+                            <option value="Controllo di gestione">Controllo di gestione</option>
+                            <option value="Creatività">Creatività</option>
+                            <option value="Cucina">Cucina</option>
+                            <option value="Customer service">Customer service</option>
+                            <option value="Design">Design</option>
+                            <option value="Diritto">Diritto</option>
+                            <option value="E-commerce">E-commerce</option>
+                            <option value="Editoria">Editoria</option>
+                            <option value="Educazione">Educazione</option>
+                            <option value="Engineering">Engineering</option>
+                            <option value="Eventi">Eventi</option>
+                            <option value="Finanza">Finanza</option>
+                            <option value="Fotografia">Fotografia</option>
+                            <option value="Grafica">Grafica</option>
+                            <option value="Healthcare">Healthcare</option>
+                            <option value="Hotel e turismo">Hotel e turismo</option>
+                            <option value="HR">HR</option>
+                            <option value="ICT">ICT</option>
+                            <option value="Immobiliare">Immobiliare</option>
+                            <option value="Ingegneria">Ingegneria</option>
+                            <option value="Investimenti">Investimenti</option>
+                            <option value="IT">IT</option>
+                            <option value="Lavori manuali">Lavori manuali</option>
+                            <option value="Legale">Legale</option>
+                            <option value="Logistica">Logistica</option>
+                            <option value="Management">Management</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Media">Media</option>
+                            <option value="Medicina">Medicina</option>
+                            <option value="Moda">Moda</option>
+                            <option value="Musica">Musica</option>
+                            <option value="Non-profit">Non-profit</option>
+                            <option value="Pubblicità">Pubblicità</option>
+                            <option value="Qualità">Qualità</option>
+                            <option value="Ricerca e sviluppo">Ricerca e sviluppo</option>
+                            <option value="Sicurezza">Sicurezza</option>
+                            <option value="Sport">Sport</option>
+                            <option value="Startup">Startup</option>
+                            <option value="Sviluppo software">Sviluppo software</option>
+                            <option value="Tecnologia">Tecnologia</option>
+                            <option value="Televisione">Televisione</option>
+                            <option value="Terzo Settore">Terzo Settore</option>
+                            <option value="Trasporti">Trasporti</option>
+                            <option value="Turismo">Turismo</option>
+                            <option value="Vendite">Vendite</option>
+                            <option value="Web development">Web development</option>
+                            <option value="Alimentare">Alimentare</option>
+                            <option value="Animazione">Animazione</option>
+                            <option value="Artigianato">Artigianato</option>
+                            <option value="Assistenza sanitaria">Assistenza sanitaria</option>
+                            <option value="Automotive">Automotive</option>
+                            <option value="Bellezza">Bellezza</option>
+                            <option value="Beni culturali">Beni culturali</option>
+                            <option value="Big data">Big data</option>
+                            <option value="Biologia">Biologia</option>
+                            <option value="Chimica">Chimica</option>
+                            <option value="Cinema">Cinema</option>
+                            <option value="Commercio">Commercio</option>
+                            <option value="Condizioni di lavoro">Condizioni di lavoro</option>
+                            <option value="Crescita personale">Crescita personale</option>
+                            <option value="Criminalità informatica">Criminalità informatica</option>
+                        </datalist>
+                        <br>
+                        <br>
+                        <input type="button" onclick="Cerca()" id="Search-btn">
+                    </div>
+
+                    <br>
+
+
+                    <div class="Suggerimenti-Out" id="SO">
+
+                        <div class="Subject">
+                            <button class="btn-add" id="1i" onclick="ADD('1')"></button>
+                            <textarea class="TXTAREA" id="1" cols="30" rows="5" readonly> Professionista con esperienza pluriennale nel settore [Settore] in ruoli [Tipologia]. Si distingue per l'ampio ventaglio di competenze multidisciplinari, ottime doti di comunicazione interpersonale e abilità di mentoring del personale grazie alle quali sa instaurare relazioni significative e garantire un ambiente di lavoro dinamico e produttivo. Dimostra salda leadership, versatilità e capacità di ottimizzare costantemente i processi aziendali potenziando il workflow e l'efficienza organizzativa attraverso un atteggiamento propositivo e proattivo alla risoluzione di problematiche anche complesse.
+                            </textarea>
+                        </div>
+                        <div class="Subject">
+                            <button class="btn-add" id="2i" onclick="ADD('2')"></button>
+                            <textarea class="TXTAREA" id="2" cols="30" rows="5"
+                                readonly>[Qualifica] di recente ingresso nel settore [Tipologia] ma con forte determinazione alla crescita professionale. Può contare su una buona competenza specialistica in ambito [Descrizione] in virtù della quale può sostenere agevolmente le esigenze aziendali dimostrando capacità di raggiungere gli obiettivi prefissati. Sa inserirsi rapidamente in nuove organizzazioni di lavoro grazie a buone doti comunicative, predisposizione al lavoro di squadra e attitudine positiva e propositiva.</textarea>
+                        </div>
+
+                        <div class="Subject">
+                            <button class="btn-add" id="3i" onclick="ADD('3')"></button>
+                            <textarea class="TXTAREA" id="3" cols="30" rows="5"
+                                readonly>[Qualifica] con alle spalle [Numero] anni di esperienza progressiva nel settore [Settore] gestendo team fino a [Numero] persone. Offre solide conoscenze in materia di [Competenza tecnica], [Competenza tecnica] e [Competenza tecnica] nonché una spiccata propensione al raggiungimento degli obiettivi rispettando budget e scadenze. Dimostra forte motivazione e spirito di iniziativa oltre a capacità di organizzazione e pianificazione, resistenza allo stress, autonomia operativa e decisionale.</textarea>
+                        </div>
+
+                        <div class="Subject">
+                            <button class="btn-add" id="4i" onclick="ADD('4')"></button>
+                            <textarea class="TXTAREA" id="4" cols="30" rows="5"
+                                readonly>Studente al [Numero] anno di [Scuola/Università] con brevi esperienze di stage in ambito [Descrizione] nel corso delle quali ha dato prova di impegno, motivazione e passione per un settore così complesso eppure coinvolgente come quello di [Nome del settore]. Attitudine all'ascolto, capacità di apprendimento rapido e grinta accompagnati ad una naturale propensione per il lavoro di squadra e per obiettivi dimostrati sia in ambito scolastico che in occasione delle prime esperienze professionali. </textarea>
+                        </div>
+                        <div class="Subject">
+                            <button class="btn-add" id="5i" onclick="ADD('5')"></button>
+                            <textarea class="TXTAREA" id="5" cols="30" rows="5"
+                                readonly>Neolaureat[-o/-a] in [Area di studi] con specializzazione in ambito [Specializzazione]. Può contare su solide basi teoriche, attitudine analitica e al problem solving associate a buone competenze tecniche, tra cui [Descrizione], consolidate nel corso di stage e tirocini presso [Settore]. Sa adattarsi agevolmente a nuove situazioni lavorative grazie a flessibilità e forte senso di responsabilità.</textarea>
+                        </div>
+
+                        <div class="Subject">
+                            <button class="btn-add" id="6i" onclick="ADD('6')"></button>
+                            <textarea class="TXTAREA" id="6" cols="30" rows="5"
+                                readonly>[Qualifica] con [Numero] anni di esperienza in [Settore] e qualifica [Tipologia], dispone di grande esperienza in [Tipologia di mansione] e nel raggiungimento, e superamento, degli obiettivi prefissati. Persegue costantemente l'eccellenza in ambito lavorativo grazie a grande energia e capacità di concentrazione. Offre un'ottima padronanza di [Competenza tecnica], [Competenza tecnica] e [Competenza tecnica], flessibilità e massima disponibilità.</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="buttons">
+                <button class="BACK" id="Back" onclick="ShowDiv('Div2')"> <span>INDIETRO</span> </button>
+                <button class="Continua" id="Continua" onclick="ShowDiv('Div4')"> <span>CONTINUA</span> </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay">
+    </div>
+
+    <div class="DatiContainer" id="Div4">
+        <p
+            style="font-size: 37px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-top: 0;color: #D0F21EFF;">
+            Inserisci informazioni sulla tua
+            <span
+                style="font-size: 37px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-top: 0;color: rgb(4, 31, 238);">
+                ISTRUZIONE E FORMAZIONE</span>
+        </p>
+        <h1
+            style="font-size: 20px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-top: auto; display: flex; flex-wrap: wrap;">
+            Inserisci le scuole , le università che hai frequentato </h1>
+        <br><br>
+        <div class="FormInput">
+            <div class="FormDATI">
+                <label for="Istituto" class="labelDATI">NOME DELL'ISTITUTO SCOLASTICO</label>
+                <input type="text" id="Istituto" placeholder="Università Bicocca" class="textfield" required>
+            </div>
+
+            <div class="FormDATI">
+                <label for="Luogo" class="labelDATI">LUOGO DELL'ISTITUTO</label>
+                <input type="text" id="Luogo" class="textfield" placeholder="Milano" required>
+            </div>
+
+            <div class="FormDATI">
+                <label for="Titolo" class="labelDATI">TITOLO DI STUDIO</label>
+                <input type="text" id="Titolo" name="datadinascita" class="textfield" placeholder="Laurea Triennale"
+                    required>
+            </div>
+
+            <div class="FormDATI">
+                <label for="Campo" class="labelDATI">CAMPO DI STUDIO</label>
+                <input type="text" id="Campo" class="textfield" placeholder="Informatica">
+            </div>
+
+            <div class="FormDATI">
+                <label for="Anno" class="labelDATI">ANNO DI CONSEGUIMENTO</label>
+                <input list="anni" id="Anno" class="textfield" placeholder="2020" required>
+
+
+                <datalist id="anni">
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+
+                </datalist>
+            </div>
+
+        </div>
+        <br><br>
+        <br>
+
+        <div class="buttons">
+            <button class="BACK" id="Back" onclick="ShowDiv('Div3')"> <span>INDIETRO</span> </button>
+            <button class="Continua" id="Continua" onclick="ShowDiv('Div5')"> <span>CONTINUA</span> </button>
+        </div>
+
+
+    </div>
+
+    <div class="DatiContainer" id="Div5" style="display: none; transition: opacity 0.5s ease-in-out;
+    opacity: 1;">
+        <p
+            style="font-size: 37px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-top: 0;color: #D0F21EFF;">
+            Inserisci qui le tue <span
+                style="font-size: 37px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-top: 0;color: rgb(30, 41, 242);">certificazioni</span>
+        </p>
+        <br>
+        <h1
+            style="font-size: 20px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-top: auto; display: flex; flex-wrap: wrap;">
+            Cerca tra le certificazioni più richieste nel mondo del lavoro</h1>
+        <br><br>
+        <div class="FormInput" style="gap: 50px;">
+
+            <div class="CERTIFICATION" id="certficationListContainer">
+                <ul class="listaCert" id="certification" contenteditable>
+                    <li style="color: gray;">Inserisci qui le certificazioni</li>
+                </ul>
+
+            </div>
+            <br>
+            <br>
+            <input list="Certificazioni" id="Certificazioni-input" class="SelectCompetenze"
+                placeholder="Cerca certificazione">
+            <datalist id="Certificazioni">
+                <option value="PMP">PMP (Project Management Professional)</option>
+                <option value="PRINCE2">PRINCE2 (Projects IN Controlled Environments)</option>
+                <option value="CCNA">CCNA (Cisco Certified Network Associate)</option>
+                <option value="MCSA">MCSA (Microsoft Certified Solutions Associate)</option>
+                <option value="CompTIA A+">CompTIA A+</option>
+                <option value="CISSP">CISSP (Certified Information Systems Security Professional)</option>
+                <option value="ITIL">ITIL (Information Technology Infrastructure Library)</option>
+                <option value="CEH">CEH (Certified Ethical Hacker)</option>
+                <option value="CISM">CISM (Certified Information Security Manager)</option>
+                <option value="CISA">CISA (Certified Information Systems Auditor)</option>
+                <option value="CRISC">CRISC (Certified in Risk and Information Systems Control)</option>
+                <option value="CFA">CFA (Chartered Financial Analyst)</option>
+                -<option value="CPA">CPA (Certified Public Accountant)</option>
+                <option value="ACCA">ACCA (Association of Chartered Certified Accountants)</option>
+                <option value="Google Ads Certification">Google Ads Certification</option>
+                <option value="HubSpot Inbound Marketing Certification">HubSpot Inbound Marketing Certification</option>
+                <option value="Facebook Blueprint Certification">Facebook Blueprint Certification</option>
+                <option value="PHR">PHR (Professional in Human Resources)</option>
+                <option value="SHRM-CP">SHRM-CP (Society for Human Resource Management Certified Professional)</option>
+                <option value="AWS Certified Developer">AWS Certified Developer</option>
+                <option value="Oracle Certified Professional, Java SE 11 Developer">Oracle Certified Professional, Java
+                    SE 11 Developer</option>
+                <option value="Certified ScrumMaster">Certified ScrumMaster</option>
+                <option value="Adobe Certified Expert">Adobe Certified Expert</option>
+                <option value="Autodesk Certified Professional">Autodesk Certified Professional</option>
+                <option value="UXQB Certified Professional for Usability and User Experience">UXQB Certified
+                    Professional for Usability and User Experience</option>
+                <option value="APR">APR (Accredited in Public Relations)</option>
+                <option value="AMA Professional Certified Marketer">AMA Professional Certified Marketer</option>
+                <option value="Hootsuite Social Marketing Certification">Hootsuite Social Marketing Certification
+                </option>
+                <option value="FE Exam">FE Exam (Fundamentals of Engineering Exam)</option>
+                <option value="PE License">PE License (Professional Engineer License)</option>
+                <option value="LEED Accredited Professional">LEED Accredited Professional</option>
+                <option value="TESOL">TESOL (Teaching English to Speakers of Other Languages)</option>
+                <option value="CDA">CDA (Child Development Associate)</option>
+                <option value="NCCPT">NCCPT (National Council for Certified Personal Trainers)</option>
+                <option value="Six Sigma Green Belt">Six Sigma Green Belt</option>
+                <option value="Lean Six Sigma Black Belt">Lean Six Sigma Black Belt</option>
+                <option value="SHRM-SCP">SHRM-SCP (Society for Human Resource Management Senior Certified Professional)
+                </option>
+            </datalist>
+
+            <button id="btn" onclick="AGGIUNGI('certification,Certificazioni-input')">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                     <path fill="none" d="M0 0h24v24H0z"></path>
                     <path fill="currentColor" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path>
@@ -218,173 +550,94 @@
         <br><br><br>
 
         <div class="buttons">
-            <button class="BACK" id="Back" onclick="ShowDiv('Div1')"> <span>INDIETRO</span> </button>
-            <button class="Continua" id="Continua" onclick="ShowDiv('Div3')"> <span>CONTINUA</span> </button>
+            <button class="BACK" id="Back" onclick="ShowDiv('Div4')"> <span>INDIETRO</span> </button>
+            <button class="Continua" id="Continua" onclick="ShowDiv('Div6')"> <span>CONTINUA</span> </button>
+        </div>
+    </div>
+    </div>
+
+
+
+    <div class="DatiContainer" id="Div6" style="display: none; transition: opacity 0.5s ease-in-out;
+    opacity: 1;">
+
+        <p
+            style="font-size: 37px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-top: 0;color: #D0F21EFF;">
+            Inserisci tutte le tue <span
+                style="font-size: 37px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-top: 0;color: rgb(30, 41, 242);">COMPETENZE
+                LINGUISTICHE</span>
+        </p>
+        <br>
+        <div style="justify-content: center; height: 50px;">
+            <button id="addLingua" onclick="AddLingua()">+ Aggiungi lingua</button>
+        </div>
+        <br>
+        <div id="ContainerLingue"
+            style=" width: 100%; height: 60%;overflow: auto; padding-right: 200px;padding-left: 20px;padding-top: 30px;">
+            <div class='Lingue' id='70_div'>
+                <div class='FormDATI' style='gap: 10px; position: relative;'>
+                    <div style='display: flex; flex-direction: row; gap: 170px;'>
+                        <label for='Lingua' class='labelDATI'>LINGUA</label>
+                        <button class='btn-show' id='70_btn' onclick='HideDiv("70_div")'></button>
+                    </div>
+                    <br>
+                    <input type='text' id='Lingua' placeholder='Italiano' class='textfield' required>
+                    <br>
+                    <div id='70_b'>
+                        <label for='70' class='labelDATI'>LIVELLO</label>
+                        <div style='display: flex; flex-direction: row; gap: 100px;'>
+                            <input type='range' id='70' min='1' max='6' size='1' step='1' value='1' class='slider'
+                                id='myRange' onchange='View("70")'><span id='70_a'></span>
+                            <button class='btn-fatto' onclick='HideDiv("70_div")'>Fatto</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="buttons">
+            <button class="BACK" id="Back" onclick="ShowDiv('Div5')"> <span>INDIETRO</span> </button>
+            <button class="Continua" id="Continua" onclick="SubmitForm()"> <span>CONTINUA</span> </button>
         </div>
 
 
+
+
+
+
+
     </div>
-    <br><br>
-    <br>
+    <div id="IdOutput">
+    
+            <div class="logoETitolo" style=" padding: auto;">
+                <div class="imageLogo"></div>
+                <a onclick="ShowAlert()" class="logoTitolo">MyCV</a>
+            </div>
 
+        <div id="Curriculum">
+
+
+            <div id="rigth-div">
+
+                <div id="IMG-PROFILE"></div>
+
+                <div id="datipersonali">
+                    
+                </div>
+
+                
+
+
+
+            </div>
+
+        </div>
 
     </div>
 
-    <div id="overlay"></div>
 
 </body>
-<script>
-
-    let select = document.getElementById("SelectID");
-    let btn = document.getElementById("btn");
-    let ul = document.getElementById("skillsList");
-
-
-
-
-
-    function AGGIUNGI() {
-
-        let selectOption = select.options[select.selectedIndex];
-        var li = document.createElement("li");
-        var text = document.createTextNode(selectOption.text);
-        li.appendChild(text);
-        ul.appendChild(li);
-
-    }
-
-
-
-    let mydiv = document.getElementsByClassName("DC");
-    let mydiv2 = document.getElementsByClassName("DatiContainer");
-
-
-
-    function Colorazione(ind) {
-
-        for (let i = 0; i < mydiv.length; i++) {
-
-           
-
-                mydiv[i].style.color = "rgb(68, 68, 68)";
-                mydiv[i].querySelector(".position").style.backgroundColor = "#D0F21EFF";
-                mydiv[i].querySelector(".DatiContatti").style.color = "#D0F21EFF";
-
-
-
-                let otherDiv = Array.from(mydiv).filter(function (div) {
-                    return div !== mydiv[ind];
-                }, mydiv[ind]);
-
-                for (let i = 0; i < otherDiv.length; i++) {
-
-                    otherDiv[i].style.color = "rgb(68, 68, 68)";
-                    let innerDiv = otherDiv[i].querySelector(".position");
-                    let text = otherDiv[i].querySelector(".DatiContatti");
-                    text.style.color = "rgb(175, 175, 175)";
-                    innerDiv.style.backgroundColor = "rgb(175, 175, 175)";
-                }
-        }
-    }
-
-
-
-
-    let div1 = document.getElementById("Div1");
-    let div2 = document.getElementById("Div2");
-    let body = document.body;
-
-
-    function HideDiv() {
-
-        div1.style.display = 'block';
-        div2.style.display = 'none';
-        animateDEGradient(41);
-
-    }
-
-    function ShowDiv(div) {
-
-
-
-        let altriDiv = Array.from(mydiv2);
-        let thisdiv = document.getElementById(div);
-
-        let index = altriDiv.indexOf(thisdiv);
-        console.log("Index___>",index);
-
-
-       altriDiv.filter(function (div) {
-                    return div !== thisdiv;
-                }, thisdiv);
-
-        console.log(altriDiv);
-
-        for (let i = 0; i < altriDiv.length; i++) {
-
-            altriDiv[i].style.display = 'none';
-
-        }
-
-        thisdiv.style.display = 'block';
-       
-        let element = event.target;
-
-        Colorazione(index);
-        
-       
-        animateGradient(21);
-
-    }
-
-
-    function animateGradient(degree) {
-        var angle = degree;
-        var interval = setInterval(function () {
-            angle++;
-            body.style.background = `linear-gradient(${angle}deg, rgba(109,32,219,1) 57%, rgba(206,233,75,1) 100%)`;
-
-            if (angle == (degree + 20)) {
-                clearInterval(interval);
-            }
-        }, 30);
-    }
-
-    function animateDEGradient(degree) {
-        var angle = degree;
-        var interval = setInterval(function () {
-            angle--;
-            body.style.background = `linear-gradient(${angle}deg, rgba(109,32,219,1) 57%, rgba(206,233,75,1) 100%)`;
-
-            if (angle == (degree - 20)) {
-                clearInterval(interval);
-            }
-        }, 30);
-    }
-    function ShowAlert() {
-        let alertDiv = document.getElementById("AlertDiv");
-        let overlayDiv = document.getElementById("overlay");
-        alertDiv.style.visibility = 'visible';
-        alertDiv.classList.toggle("show");
-        overlayDiv.style.display = 'block';
-        overlayDiv.style.opacity = 1;
-
-    }
-
-    function Conferma() {
-        window.location.href = 'PageLogin.html';
-    }
-
-    function Annulla() {
-        let alertDiv = document.getElementById("AlertDiv");
-        alertDiv.style.visibility = 'hidden';
-        alertDiv.classList.toggle("show");
-        let overlayDiv = document.getElementById("overlay");
-        overlayDiv.style.opacity = 0;
-    }
-
-
-
-</script>
+<script src="script.js"></script>
 
 </html>
